@@ -1,0 +1,99 @@
+/* 全体レイアウト */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+/* ページ全体 */
+.gallery-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* 各ブロック共通 */
+.gallery-mobile .main,
+.gallery-mobile .main-2,
+.gallery-mobile .q,
+.gallery-mobile .q-2,
+.gallery-mobile .q-3,
+.gallery-mobile .q-4,
+.gallery-mobile .q-5,
+.gallery-mobile .q-6,
+.gallery-mobile .q-7,
+.gallery-mobile .q-8,
+.gallery-mobile .q-9,
+.gallery-mobile .q-10,
+.gallery-mobile .q-11,
+.gallery-mobile .q-12,
+.gallery-mobile .q-13,
+.gallery-mobile .q-14 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* 中央寄せ */
+  justify-content: center;
+  margin: 20px 0;        /* 上下の余白 */
+  text-align: center;
+}
+
+/* 画像・動画共通スタイル */
+.gallery-mobile img,
+.gallery-mobile video {
+  max-width: 100%;     /* 横幅100%以内 */
+  height: auto;        /* 縦横比保持 */
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; /* 引き伸ばし禁止・アスペクト比保持 */
+}
+
+/* テキスト部分 */
+.text-wrapper,
+.text-wrapper-2,
+.text-wrapper-3,
+.q-3 {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+}
+
+/* フッター固定要素 */
+.menu-bar-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around; /* 横幅等間隔配置 */
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.menu-bar-mobile .group {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-bar-mobile img {
+  width: 40px;
+  height: auto;
+}
+
+/* トップアイコン固定 */
+.top-icon-mobile {
+  position: fixed;
+  bottom: 60px;  /* メニューバーの上 */
+  right: 15px;   /* 右端に寄せる */
+  width: 50px;
+  height: auto;
+  z-index: 1100;
+}

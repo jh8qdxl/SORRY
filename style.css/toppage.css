@@ -1,0 +1,54 @@
+/* ==============================
+   スマホトップページ用CSS
+   ============================== */
+
+/* toppage全体 */
+.toppage-mobile {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 画面全体 */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 背景画像 */
+.toppage-mobile .overlap-group img.on-my-mind {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;       /* 幅いっぱい */
+  height: auto;      /* 縦横比保持 */
+  max-height: 100vh; /* 高さが画面を超えないように */
+  transform: translate(-50%, -50%); /* 中央揃え */
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* 中央画像 */
+.toppage-mobile .main-visualcolor .element {
+  position: relative;
+  width: 100%;       /* 横幅ピッタリ */
+  height: auto;      /* 縦横比保持 */
+  max-width: 100%;   /* 横幅にぴったり */
+  margin-top: 10vh;  /* 上から少し下げる */
+  display: block;
+  z-index: 2;
+}
+
+/* Ready?テキスト用 */
+.ready-wrapper {
+  position: fixed;   /* 画面に固定 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;      /* 最前面 */
+}
+
+.ready-text {
+  font-size: 2rem;   /* 好きなサイズ */
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 2s ease; /* クリック時フェード用 */
+}

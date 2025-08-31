@@ -1,0 +1,43 @@
+.toppage-mobile {
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    width: 100vw;
+}
+
+.toppage-mobile .main-visualcolor-wrapper {
+    background-color: white;
+    overflow: hidden;
+    width: 393px;
+    height: 852px;
+}
+
+.toppage-mobile .main-visualcolor {
+    position: relative;
+    width: 1036px;
+    height: 777px;
+    top: 38px;
+    left: -322px;
+}
+
+.toppage-mobile .overlap-group {
+    position: relative;
+    width: 393px;
+    height: 801px;
+    top: -12px;
+    left: 322px;
+    background-image: url(./img/1.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.toppage-mobile .element {
+    position: absolute;
+    width: 393px;
+    height: 295px;
+    top: 253px;
+    left: 0;
+    aspect-ratio: 1.33;
+    object-fit: cover;
+}

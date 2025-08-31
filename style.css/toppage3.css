@@ -1,0 +1,43 @@
+.toppage-mobile {
+    background-color: #333333;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    width: 100vw;
+}
+
+.toppage-mobile .div {
+    background-color: #333333;
+    width: 393px;
+    height: 852px;
+    position: relative;
+}
+
+.toppage-mobile .thumbnail-OP {
+    position: absolute;
+    width: 393px;
+    height: 221px;
+    top: 316px;
+    left: 0;
+    background-color: white;
+}
+
+.toppage-mobile .icon {
+    position: absolute;
+    width: 43px;
+    height: 40px;
+    top: 266px;
+    left: 11px;
+}
+
+.toppage-mobile .text-wrapper {
+    position: absolute;
+    top: -23px;
+    left: 1px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: white;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+}
